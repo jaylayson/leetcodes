@@ -1,6 +1,6 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        int[] results = new int[2];
+        int[] results = new int[2]; //array to hold 2 indices
         for(int i = 0; i < nums.length; i++){            
             for(int j = 1; j < nums.length; j++){
                 if(nums[i] + nums[j] == target && i != j){//if the 2 unique index values add up to target
@@ -11,6 +11,6 @@ class Solution {
             }//end of 2nd for-loop
 
         }//end of 1st for-loop
-    throw new IllegalArgumentException("No solution");
+    throw new IllegalArgumentException("No solution"); //get past the "missing return statement" error
     }//end of twoSum
 }
